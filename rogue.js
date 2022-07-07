@@ -16,7 +16,7 @@ let col = Math.ceil(weidth / grid) ;
 //карта проходов
 //0 стена
 let playField = new Array(row);
-    for(var i = 0; i < row; i++){
+    for(let i = 0; i < row; i++){
         playField[i] = new Array(col);
         for(let j = 0; j < col; j++){
             playField[i][j] = 0;
@@ -25,7 +25,7 @@ let playField = new Array(row);
 //карта объектов
 //1 пустота
 let itemField = new Array(row);
-    for(var i = 0; i < row; i++){
+    for(let i = 0; i < row; i++){
         itemField[i] = new Array(col);
         for(let j = 0; j < col; j++){
             itemField[i][j] = 1;
@@ -34,7 +34,7 @@ let itemField = new Array(row);
 //карта противников
 //1 пустота
 let enemyField = new Array(row);
-    for(var i = 0; i < row; i++){
+    for(let i = 0; i < row; i++){
         enemyField[i] = new Array(col);
         for(let j = 0; j < col; j++){
             enemyField[i][j] = 1;
@@ -108,8 +108,8 @@ class Room{
     
     //отрисовать карту
     drawMap(){
-        for(var i = 0; i < row; i++){ 
-            for(var j = 0; j < col; j++){ 
+        for(let i = 0; i < row; i++){ 
+            for(let j = 0; j < col; j++){ 
                 let parent = document.querySelector('.field');
                 let p = document.createElement('div');
                 //1 проход
