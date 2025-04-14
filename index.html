@@ -1,31 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <h1>Welcome to My Website</h1>  
-        <div class="container">
-            <a class="zaichik" href="./apple/apple.html">
-                <image src='./img/apple.jpg'>
-            </a>
-            <a class="zaichik" href="./ananas/ananas.html">
-                <image src='./img/ananas.jpg'>
-            </a>
-            <a class="zaichik" href="./berry/berry.html">
-                <image src='./img/berry.jpg'>
-            </a>
-            <a class="zaichik" href="./kivi/kivi.html">
-                <image src='./img/kivi.jpg'>
-            </a>
-        
-        </div>
-    </main>
-  </body>
+    <meta charset="UTF-8">
+    <title>Отель "Добрые лапки"</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background: #f7f0f0;
+      }
+      .wrapper {
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+      }
+      .header {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px;
+          border-bottom: 1px solid #000000;
+      }
+      .menu {
+          display: flex;
+          gap: 15px;
+      }
+      .menu__item {
+          color: #000000;
+          text-decoration: none;
+      }
+      .main {
+          padding: 20px;
+      }
+      .about {
+          text-align: center;
+      }
+      .footer {
+          margin-top: auto;
+          padding: 20px;
+          border-top: 1px solid #000000;
+      }
+
+      a {
+        color: inherit;
+        font-style: italic;
+      }
+
+  </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div>
+                Logo
+            </div>
+            <nav class="menu">
+                <a class="menu__item" href="#">Главная</a>
+                <a class="menu__item" href="#">Услуги</a>
+                <a class="menu__item" href="#">Контакты</a>
+                <a class="menu__item" href="#">Отзывы</a>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="about">
+                <h2>Добро пожаловать в отель для кошек «Добрые лапки»!</h2>
+                <p>
+                    В нашем отеле ваши питомцы будут чувствовать себя как <a href="./v2/konkursnoe_zadanie.doc">задание</a>.
+                    Предлагаем круглосуточное наблюдение за хвостиками, полноценное питание, уход, <a href="./v2/Kriterii-otsenki-_1.xls">критерии</a> и приятную компанию!
+                </p>
+                <p>
+                    Также у нас можно купить товары для ваших любимцев
+                    — уютные лежанки, 
+                    <a href="/ananas/KP_Kitay_Khaynan.doc">компредлы</a>,
+                    безопасные игрушки, 
+                    <a href="/ananas/tur_v_Kitay_o_Khaynan.pptx">китайские туры</a>,
+                    вкусный корм,
+                    <a href="/ananas/Wings.pptx">крылья</a>, 
+                    <a href="/ananas/Бизнес-план Wings Ананас.pptx"> ещё крылья</a>,
+
+                    и полезные гаджеты: автоматические поилки, станции видеонаблюдения и умные туалеты.
+                </p>
+            </section>
+        </main>
+        <footer class="footer">
+            <div>
+                Телефон: +7(ххх)-ххх-хх-хх
+            </div>
+            <div>
+                Email: mail@mail.ru
+            </div>
+        </footer>
+    </div>
+</body>
 </html>
